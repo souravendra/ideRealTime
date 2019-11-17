@@ -4,7 +4,7 @@
         <script>
             function refresh (){
                 var textContent = document.getElementById('editor-textarea').value;
-                document.getElementById('viewer').srcdoc = tesxtContent;
+                document.getElementById('viewer').srcdoc = textContent;
 
             }
         
@@ -13,10 +13,9 @@
     </head>
     <body>
         <div class="main">
-            <textarea id="edtior-textarea"></textarea>
+            <textarea id = "editor-textarea"  onkeyup = "refresh()"></textarea>
             <iframe id="viewer"></iframe>
-            <input type="button" value="Run" onclick="refresh()"/>
-
+            
         </div>
     </body>
 
