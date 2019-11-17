@@ -27,6 +27,7 @@
                 width: 100%;
                 height: 95%;
                 margin: 10px;
+                padding: 5px;
             }
             #viewer{
                 background: white;
@@ -42,7 +43,7 @@
     </head>
     <body>
         <div class="main">
-            <textarea id = "editor-textarea"  onkeyup = "refresh()"></textarea>
+            <textarea id = "editor-textarea"  onkeyup = "refresh()" placeholder = "Code Goes Here..."></textarea>
             <iframe id="viewer"></iframe>
             
         </div>
