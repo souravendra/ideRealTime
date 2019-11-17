@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>ideRealTime</title>
+        <script>
+            function refresh (){
+                var textContent = document.getElementById('editor-textarea').value;
+                document.getElementById('viewer').srcdoc = tesxtContent;
+
+            }
+        
+        </script>
+    <style></style>
+    </head>
+    <body>
+        <div class="main">
+            <textarea id="edtior-textarea"></textarea>
+            <iframe id="viewer"></iframe>
+            <input type="button" value="Run" onclick="refresh()"/>
+
+        </div>
+    </body>
+
+</html>
